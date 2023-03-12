@@ -1,10 +1,9 @@
 const swiper = new Swiper('.swiper', {
   // Optional parameters
-  loop: true,
   effect: 'coverflow',
   grabCursor: true,
   centeredSlides: true,
-  loop: true,
+  loop: false,
   slidesPerView: 'auto',
   coverflowEffect: {
     rotate: 2,
