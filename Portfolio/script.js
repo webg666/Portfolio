@@ -1,8 +1,21 @@
-var counter=1;
-setInterval(function(){
-    document.getElementById('raadio' + counter).checked=true;
-    counter++;
-    if(counter > 4){
-        counter = 1;
+var swiper = new Swiper('.Design-slider', {
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    loop: true,
+    slidesPerView: 'auto',
+    coverflowEffect: {
+      rotate: 0,
+      stretch: 0,
+      depth: 100,
+      modifier: 2.5,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
     }
-})
+  });
