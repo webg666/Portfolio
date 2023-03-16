@@ -20,7 +20,7 @@
 
 body{
     overflow-x: hidden;
-    background: linear-gradient(180deg, rgb(45, 159, 136) 15%, rgb(52, 94, 84) 45%, rgb(31, 64, 61) 88%);
+    background: linear-gradient(180deg, rgb(24, 101, 85) 15%, rgb(52, 94, 84) 45%, rgb(31, 64, 61) 88%);
     height: 530vh;
     background-size: contain;
 }
