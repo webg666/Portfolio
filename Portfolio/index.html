@@ -4,147 +4,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
-    <!---Font-->
+    <!---FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Allerta+Stencil&family=Bebas+Neue&family=Bungee+Inline&family=Gloock&family=Libre+Bodoni:wght@500&family=Major+Mono+Display&family=Monoton&family=Righteous&family=Tourney:wght@100&family=Yeseva+One&display=swap" rel="stylesheet">
 </head>
 <body>
 
-   
-    <nav>
-        <ul class="navmenu">
+
+      
+       <nav>
+         <ul class="navmenu">
             <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
             <li><a href="">Work</a></li>
             <li><a href="">Contact</a></li>
         </ul>
-  </nav>
-        
-    
+       </nav>
 
-    <section>
-    <div class="Home">
-        
-        <video src="Design/Img/Home.mov"></video>
-     </div>
+    <section id="Home">
+         <h2>ARE YOU <br>READY <br>TO TAKE <br>YOUR <br> BUISNESS </h2>
+         <h1> <span class="animation">ONLINE</span></h1>
+         <div class="blur2"></div>
     </section>
 
     <section id="About">
-        <section class="hidden">
-        <h2>Good Design  <br> Means Good Business </h2>
-         </section>
-        <div class="about-us ">
-          <div class="about-img hidden">
-           <img class="about1" src="Design/Img/About2.jpg" alt="" height="260" width="270">
-           <h4>Web Design</h4>
-        </div>
-        <div class="about-img hidden">
-          <img class="about1" src="Design/Img/About3.jpg" alt="" height="260" width="270">
-          <h4>Backend <br> 
-            Development</h4>
-        </div>
-        <div class="about-img hidden">
-            <img class="about1" src="Design/Img/About1.jpg" alt="" height="260" width="270">
-            <h4>Frontend <br>
-                Development</h4>
-         </div>
-        
-       
-       
-    </div>
-        <div class="text-about hidden" >
-            <h4>Web design is a critical component of website development that focuses on the visual and aesthetic aspects of a website. Effective web design involves creating an attractive and user-friendly interface that enhances the overall user experience.
-                To be a successful web designer, you should have a keen eye for design, an understanding of user behavior, and a knowledge of various design software tools. Some essential web design skills include
-            </h4>
+
+        <div class="blur hidden">
+            <p class="text"> We are a passionate team of full <br>stuck developers and web designers</p>
+            <h1>Our skills include</h1>
+            <div class="skills hidden">
+             <img src="Design/Img/html.png" alt="">
+             <img src="Design/Img/css.png" alt="">
+             <img src="Design/Img/javascript.png" alt="">
+             <img src="Design/Img/React-icon.svg.png" alt="">
+             <img src="Design/Img/node.png" alt="">
+             <img src="Design/Img/Adobe-XD.png" alt="">
+             </div>
         </div>
 
-
-    </section>
-    <section id="Our Work">
-        <div class="container">
-                <h1 class="text-cent section-heading">Our Work</h1>
+        <div class="More">
+            <h2 class="hidden">Good Design  <br> Means Good Business </h2>
+            <div class="about-img hidden">
+                <img class="about1" src="Design/Img/About2.jpg" alt="" style="-webkit-filter: drop-shadow(10px 10px 10px #222); filter: drop-shadow(5px 5px 5px #222);" >
+                <h4>Web Design</h4>
+             </div>
+             <div class="about-img2 hidden">
+                <h4>Frontend <br>
+                    Development</h4>
+                    <img class="about1" src="Design/Img/About3.jpg" alt="" style="-webkit-filter: drop-shadow(10x 10px 10px #222); filter: drop-shadow(5px 5px 5px #222);" >
+             </div>
+             <div class="about-img3 hidden">
+                <img class="about1" src="Design/Img/About1.jpg" alt="" style="-webkit-filter: drop-shadow(10px 10px 10px #222); filter: drop-shadow(5px 5px 5px #222);" >
+                <h4>Backend <br> 
+                    Development</h4>
+             </div
         </div>
-
-        
-        <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slide-Start-->
-              <div class="swiper-slide">
-                <div class="slide-img">
-                <img src="Design/Img/Slide-capivara.png" alt=""></div>
-               <div class="slider-content">
-                <h2>Capivara.com</h2>
-               </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-Start-->
-            <div class="swiper-slide">
-                <div class="slide-img">
-                <img src="Design/Img/Slide-Racoon.png" alt=""></div>
-               <div class="slider-content">
-                <h2>Racoon.com</h2>
-               </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-Start-->
-            <div class="swiper-slide">
-                <div class="slide-img">
-                <img src="Design/Img/Slide-frog.png" alt=""></div>
-               <div class="slider-content">
-                <h2>Frog.com</h2>
-               </div>
-            </div>
-            <!-- Slide-end -->
-           
-            </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
           
-            <!-- If we need navigation buttons -->
-            <div class="Design-slider-control">
-                <div class="swiper-button-prev slider-arrow">
-                    <ion-icon name="'arrow-back-outline" ></ion-icon>
-                </div>
-                <div class="swiper-button-next slider-arrow">
-                    <ion-icon name="'arrow-forward-outline"></ion-icon>
-                </div>
-                <div class="swiper-pagination">
-                </div>
-    
-          
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
-          </div>
     </section>
 
-    <section class="skills hidden" >
-        
-            <img src="Design/Img/html.png" alt="">
-            <img src="Design/Img/css.png" alt="">
-            <img src="Design/Img/javascript.png" alt="">
-            <img src="Design/Img/React-icon.svg.png" alt="">
-            <img src="Design/Img/node.png" alt="">
-            <img src="Design/Img/unnamed.png" alt="">
+    <section id="Projects">
+            <h2 class="hidden">Our Projects </h2>
+            <div class="ecommers hidden">
+                <img src="design/Img/Cara.com.png" alt="" style="-webkit-filter: drop-shadow(10px 10px 10px #222); filter: drop-shadow(5px 5px 5px #222);">
+                <h4>quas doloremque distinctio amet quaerat exercitationem distinctio nisi amet ad odit dignissimos voluptatem corrupti corrupti eaque rem quas odit undefined dolor distinctio similique corrupti eius eius Nisi Nisi velit voluptatem</h4>
+            </div>
+        </div>
     </section>
-
-    <section id="Contact-us">
-      <form >
-        <h3>Contact Us</h3>
-        <input type="text"  id="text" placeholder="Your Name" required>
-        <input type="email"  id="Email" placeholder="Your Email" required>
-        <textarea name="message" id="message" cols="30" rows="4" placeholder="Your message"></textarea>
-        <button type="submit">Send</button>
-      </form>
-    </section>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
-<script  defer src="script.js"></script>
+    <script  defer src="script.js"></script>
 </body>
 </html>
