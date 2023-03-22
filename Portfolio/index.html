@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="general.css">
     <!---FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,33 +16,39 @@
 
 
       
-       <nav>
-         <ul class="navmenu">
-            <li><a href="">Home</a></li>
-            <li><a href="">Work</a></li>
-            <li><a href="">Contact</a></li>
-        </ul>
-       </nav>
+    <div class="block">
+        <a href="index.html" class="button ">Home</a>
+        <div class="menu-space"></div>
+        <a href="Projects.html" class="button ">Projects</a>
+        <div class="menu-space"></div>
+        <a href="Contact-Us.html" class="button ">About us</a>
+</div>
 
     <section id="Home">
-         <h2>ARE YOU <br>READY <br>TO TAKE <br>YOUR <br> BUISNESS </h2>
-         <h1> <span class="animation">ONLINE</span></h1>
-         <div class="blur2"></div>
+         <h2 >ARE YOU <br>READY <br>TO TAKE <br>YOUR <br> BUISNESS </h2>
+        <div class="container">
+         <h1 class="typed"> <span class="animation">ONLINE.</span></h1>
+         </div>
     </section>
 
     <section id="About">
-
-        <div class="blur hidden">
-            <p class="text"> We are a passionate team of full <br>stuck developers and web designers</p>
-            <h1>Our skills include</h1>
-            <div class="skills hidden">
-             <img src="Design/Img/html.png" alt="">
-             <img src="Design/Img/css.png" alt="">
-             <img src="Design/Img/javascript.png" alt="">
-             <img src="Design/Img/React-icon.svg.png" alt="">
-             <img src="Design/Img/node.png" alt="">
-             <img src="Design/Img/Adobe-XD.png" alt="">
-             </div>
+        
+        
+        
+        <div class="About">
+            <div class="blur hidden"></div>
+            <div class="text hidden">
+              <p class="text"> We are a passionate team of full<br>stuck developers and web designers</p>
+              <h1>Our skills include</h1>
+          </div>
+        </div>
+        <div class="skills hidden">
+            <img src="Design/Img/html.png" alt="">
+            <img src="Design/Img/css.png" alt="">
+            <img src="Design/Img/javascript.png" alt="">
+            <img src="Design/Img/React-icon.svg.png" alt="">
+            <img src="Design/Img/node.png" alt="">
+            <img src="Design/Img/Adobe-XD.png" alt="">
         </div>
 
         <div class="More">
@@ -49,7 +56,7 @@
             <div class="about-img hidden">
                 <img class="about1" src="Design/Img/About2.jpg" alt="" style="-webkit-filter: drop-shadow(10px 10px 10px #222); filter: drop-shadow(5px 5px 5px #222);" >
                 <h4>Web Design</h4>
-             </div>
+            </div>
              <div class="about-img2 hidden">
                 <h4>Frontend <br>
                     Development</h4>
@@ -61,17 +68,16 @@
                     Development</h4>
              </div
         </div>
+        
+        <div class="learn-more hidden">
+            <h4> We can help  you create your fully custom website with modern UI <br>
+                <a href="Projects.html">Click  here to see our projects</a> 
+            </h4>
+        </div>
           
     </section>
 
-    <section id="Projects">
-            <h2 class="hidden">Our Projects </h2>
-            <div class="ecommers hidden">
-                <img src="design/Img/Cara.com.png" alt="" style="-webkit-filter: drop-shadow(10px 10px 10px #222); filter: drop-shadow(5px 5px 5px #222);">
-                <h4>quas doloremque distinctio amet quaerat exercitationem distinctio nisi amet ad odit dignissimos voluptatem corrupti corrupti eaque rem quas odit undefined dolor distinctio similique corrupti eius eius Nisi Nisi velit voluptatem</h4>
-            </div>
-        </div>
-    </section>
+    
     <script  defer src="script.js"></script>
 </body>
 </html>

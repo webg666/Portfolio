@@ -21,7 +21,7 @@
 body{
     overflow-x: hidden;
     background: linear-gradient(180deg, rgb(24, 101, 85) 15%, rgb(52, 94, 84) 45%, rgb(31, 64, 61) 88%);
-    height: 530vh;
+    height: 580vh;
     background-size: contain;
     font-family: 'Bebas Neue', cursive;
 }
@@ -254,6 +254,64 @@ form button{
   transform: translateY(0);
  
 }
+
+
+
+
+
+
+.block {
+  
+  display: flex;
+  width: 100%;
+  padding-top: 0;
+  justify-content: center;
+  position: relative;
+  position: sticky;
+  top: 0; 
+  right: 0;
+  z-index: 3;
+}
+
+
+.menu-space {
+  display: inline-block;
+  width: 10px;
+  height: auto;
+  align-self: stretch;
+}
+
+.button {
+  position: static;
+  padding-right: 19px;
+  padding-left: 19px;
+  border-radius: 20px;
+  background-color: #5e7ab6;
+  opacity: 1;
+  -webkit-transition: 250ms cubic-bezier(.333, .007, .25, 1);
+  transition: 250ms cubic-bezier(.333, .007, .25, 1);
+  font-family: BasicCommercialLTProLt,Arial,sans-serif;
+  color: #fff;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  backdrop-filter: blur(4px);
+}
+
+
+.w-button {
+  display: inline-block;
+  padding: 9px 15px;
+  border: 0;
+  line-height: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 1;
+}
+
+
 
 
 

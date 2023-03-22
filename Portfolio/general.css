@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+body{
+    overflow-x: hidden;
+    background: linear-gradient(180deg, rgba(16,18,22,1) 0%, rgba(19,44,63,1) 100%);
+    height:  585vh;
+}
+
+
+
+/*Nav-bar */
+
+.block {
+  
+    display: flex;
+    width: 100%;
+    padding-top: 0;
+    justify-content: center;
+    position: relative;
+    position: sticky;
+    top: 0; 
+    right: 0;
+    z-index: 3;
+  }
+  
+  
+  .menu-space {
+    display: inline-block;
+    width: 10px;
+    height: auto;
+    align-self: stretch;
+  }
+  
+  .button {
+    position: static;
+    margin-top: 10px;
+    padding-right: 33px;
+    padding-left: 33px;
+    border-radius: 20px;
+    background-color: rgba(51, 158, 164, 0.5);
+    opacity: 1;
+    font-family: 'Bebas Neue', cursive;
+    color: #fff;
+    font-size: 20px;
+    line-height: 38px;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    backdrop-filter: blur(4px);
+  }
+  
+  
+
+
+@keyframes background-pan {
+    from {
+        background-position: 0% center;
+    }
+    to {
+        background-position: -200% center;
+    }
+   }
+
+   @keyframes typeIn {
+    to { width: 28ch; }
+}
+
+   /***Transition**/
+   .hidden{
+    opacity: 0;
+    filter: blur(4px);
+    transition: all .8s;
+    transform: translateY(20%);
+  }
+  .show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+   
+  }
+  .container{
+    display: inline-block;
+  }
+  
+  .typed {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid;
+    width: 0;
+    animation: typing 1.5s steps(14, end ) forwards, blinking 1s infinite;
+  }
+    
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes blinking {
+    0% {border-right-color: transparent}
+    50% {border-right-color: rgb(240, 153, 81)}
+    100% {border-right-color: transparent}
+  }
+
+
+/**Responsive*/
+
+@media  (max-width:1100px){
+
+    body{
+        height:  990vh;
+    
+    }
+
+    nav {
+        width: 100%;
+        background:none;
+    }
+}
