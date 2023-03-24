@@ -5,14 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="Home.css">
-    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="style/Home.css">
+    <link rel="stylesheet" href="style/general.css">
     <!---FONTS-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Allerta+Stencil&family=Bebas+Neue&family=Bungee+Inline&family=Gloock&family=Libre+Bodoni:wght@500&family=Major+Mono+Display&family=Monoton&family=Righteous&family=Tourney:wght@100&family=Yeseva+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Allerta+Stencil&family=Anonymous+Pro:ital@1&family=Bebas+Neue&family=Bungee+Inline&family=Gloock&family=Libre+Bodoni:wght@500&family=Major+Mono+Display&family=Monoton&family=Righteous&family=Tourney:wght@100&family=Yeseva+One&display=swap" rel="stylesheet">
+<!------ICKONS-->
+<link href='https://unpkg.com/css.gg@2.0.0/icons/css/menu.css' rel='stylesheet'>
+<link href='https://unpkg.com/css.gg@2.0.0/icons/css/close.css' rel='stylesheet'>
 </head>
-<body>
+<body data-nav="false">
 
 
       
@@ -24,6 +27,12 @@
         <a href="Contact-Us.html" class="button ">About us</a>
 </div>
 
+ <button id="nav-toggle" type="button" onclick="toggleNav()">
+  <i class="open" class="gg-menu"></i>
+  <i class="close" class="gg-close"></i>
+ </button>
+
+
     <section id="Home">
          <h2 >ARE YOU <br>READY <br>TO TAKE <br>YOUR <br> BUISNESS </h2>
         <div class="container">
@@ -31,48 +40,50 @@
          </div>
     </section>
 
-    <section id="About">
-        
-        
-        
-        <div class="About">
-            <div class="blur hidden"></div>
-            <div class="text hidden">
-              <p class="text"> We are a passionate team of full<br>stuck developers and web designers</p>
-              <h1>Our skills include</h1>
+    <section id="About ">  
+            <div class="text hidden ">
+              <p > We are a passionate team of full<br>stuck developers and web designers</p>
           </div>
-        </div>
-        <div class="skills hidden">
-            <img src="Design/Img/html.png" alt="">
-            <img src="Design/Img/css.png" alt="">
-            <img src="Design/Img/javascript.png" alt="">
-            <img src="Design/Img/React-icon.svg.png" alt="">
-            <img src="Design/Img/node.png" alt="">
-            <img src="Design/Img/Adobe-XD.png" alt="">
-        </div>
+       
 
-        <div class="More">
-            <h2 class="hidden">Good Design  <br> Means Good Business </h2>
-            <div class="about-img hidden">
-                <img class="about1" src="Design/Img/About2.jpg" alt="" style="-webkit-filter: drop-shadow(10px 10px 10px #222); filter: drop-shadow(5px 5px 5px #222);" >
-                <h4>Web Design</h4>
-            </div>
-             <div class="about-img2 hidden">
-                <h4>Frontend <br>
-                    Development</h4>
-                    <img class="about1" src="Design/Img/About3.jpg" alt="" style="-webkit-filter: drop-shadow(10x 10px 10px #222); filter: drop-shadow(5px 5px 5px #222);" >
-             </div>
-             <div class="about-img3 hidden">
-                <img class="about1" src="Design/Img/About1.jpg" alt="" style="-webkit-filter: drop-shadow(10px 10px 10px #222); filter: drop-shadow(5px 5px 5px #222);" >
-                <h4>Backend <br> 
-                    Development</h4>
-             </div
-        </div>
+        <article>
+            <section class="card hidden">
+              <div class="text-content">
+                <h3>Elevate Your Brand with Exceptional Design</h3>
+                <p>Your website is often the first point of contact for potential customers. We believe great design can help elevate your brand and make a lasting impression.</p>  
+              </div>
+              <div class="visual">
+                <img src="design/Img/About1.jpg" alt="" />
+              </div>
+            </section> 
+          
+            <section class="card hidden">
+              <div class="text-content">
+                <h3>Design that Speaks to Your Audience</h3>
+                <p>We work closely with you to understand your brand and your customers, so we can create a website that speaks directly to your target audience.</p>  
+              </div>
+              <div class="visual">
+                <img src="design/Img/About2.jpg" alt="" />
+              </div>
+            </section> 
+          
+            <section class="card hidden">
+              <div class="text-content">
+                <h3>Design that Drives Results for Your Business</h3>
+                <p>We specialize in creating websites that not only look great but also drive traffic and conversions. Let us help you create a website that delivers real business value.</p>  
+              </div>
+              <div class="visual">
+                <img src="design/Img/About3.jpg" alt="" />
+              </div>
+            </section> 
+          </article>
         
         <div class="learn-more hidden">
-            <h4> We can help  you create your fully custom website with modern UI <br>
-                <a href="Projects.html">Click  here to see our projects</a> 
+            <h4> Check out our projects <br>
             </h4>
+            <div class="text-center">
+                <button class=".custom-btn">Our Projects</button>
+                </div>
         </div>
           
     </section>

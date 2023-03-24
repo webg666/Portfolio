@@ -12,3 +12,9 @@ const observer = new IntersectionObserver((entries) =>{
   
   const hiddenElements = document.querySelectorAll('.hidden');
   hiddenElements.forEach((el) => observer.observe(el));
+
+  //Responsive navbar
+
+  const toggleNav = () =>{
+    document.body.dataset.nav = document.body.nav === "true" ? "false" : "true";
+  }

@@ -1,321 +1,78 @@
 
 
-*{
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-}
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style-type: none;
-  text-decoration: none;
-}
-
-
-
-
-body{
-    overflow-x: hidden;
-    background: linear-gradient(180deg, rgb(24, 101, 85) 15%, rgb(52, 94, 84) 45%, rgb(31, 64, 61) 88%);
-    height: 580vh;
-    background-size: contain;
-    font-family: 'Bebas Neue', cursive;
-}
-.navmenu a{
-    font-family: 'Bebas Neue', cursive;
-    gap: 20px;
-    text-transform: capitalize;
-    font-size: 26px;
-    font-weight: 500;
-    color:  #000000;
-
-}
-.navmenu {
-    display: flex;
-    justify-content: center;
-    position: relative;
-}
-
-
-nav{
-    width: 100%;
-    align-items: center;
-    backdrop-filter: blur(8px);
-    box-shadow: 0 20px 30px rgba(0,0,0,0.25);
-    padding: 18px;
-    position: sticky;
-    top: 0; 
-    right: 0;
-    z-index: 100;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: none;
-    
-  }
-
-
- .Home {
+body,main {
   height: 100vh;
- }
-
- .Home video{
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  margin-top: -60px;
-}
-.Home h1{
-  position: absolute;
-  top: 40%;
-  left: 5%;
-  font-size: 30px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-weight: 900;
-  font-style: oblique;
-  transform:scale(1);
-}
- .text h4{
-  font-size: 60px;
-  font-weight: 400;
-  color: #BEDADA;
-}
-.text h4 span{
- color: #EEB06F ;
- font-family:'Inter', sans-serif;
+  width: 100vw;
+  background-color: black;
+  overflow-x: hidden;
 }
 
-
-.text{
-  margin: 45px;
-  padding: 10px;
-  min-width: 400px;
-}
-
-
- .about-us{
-  display: flex;
-  flex-direction: row;
- }
-
- #About h2{
-    color: #EEB06F;
-    font-size: 50px;
-    font-weight: 700;
-    text-align: center;
-    padding-top: 160px;
-
- }
-
- .text-cent{
-  text-align: center;
-  color: #EEB06F;
-  font-size: 60px;
-  margin: 10px 0;
-  font-weight: 700;
-}
-
-
-.about-us .about-img{
-  display: row;
-  padding: 120px;
-}
- .about-img img{
-   border-radius: 18%;
- }
- .about-img h4{
-  text-align: center;
-  color: #EEB06F;
-  padding-top: 50px;
-  font-size: 20px;
- }
-
- .text-about {
-   margin-left: 40px;
- }
- .text-about h4{
-   width: 100%;
-   font-size: 24px;
-   color: #EEB06F;
- }
- 
-
-.container h1{
-  padding: 80px 0;
-}
-
- .swiper {
-  width: 1000px;
-  height: 580px;
-  padding-top: 20px;
-  border-radius: 20px;
-}
-
-.slider-content {
-  left: 0;
-  top: 90%;
-  right: 0;
-  bottom: 0;
-}
-.slider-content h2{
-  text-align: center;
-}
-
-
-
-.Design-slider-control .slider-arrow{
-  background: #235263;
-  width: 3.5rem;
-  height: 3.5rem;
-  border-radius: 50%;
-
-  filter: drop-shadow(0px 8px 74px rgba(18, 28, 53, 0.1));
-}
-.swiper-button-next,
-.swiper-button-prev {
-  background-color: white;
-  background-color: rgba(255, 255, 255, 0.5);
-  color: #000 !important;
-  fill: black !important;
-  stroke: black !important;
-}
-
-
-.skills{
-  display: flex;
-  padding-top:50px;
-}
-.skills img{
-  width: 100px;
-  padding: 50px;
-  margin-left: 32px;
-  border-radius: 60px;
-}
- 
-form{
- display: flex;
- flex-direction: column;
- padding-top: 60px ;
- width: 800px;
- text-align: center;
- width: 50%;
- margin-left : 25% 
-}
-
-form h3{
-  color: #EEB06F;
-  font-size: 35px;
-  padding: 24px 0;
-}
-
-form input, form textarea {
-  padding: 16px 0;
-  margin: 10px 0;
-  border-radius: 10px;
-  background-color:#d2a87a;
-}
-
- form textarea:hover{
-  background-color: #ddc5aa;
-  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.6s;
-}
-
-form input:hover{
-  background-color: #ddc5aa;
-  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.6s;
-}
-
-form button{
-  width: 70px;
-  height: 40px;
-  margin-left: 45%;
-  margin-top: 15px;
-  border-radius: 10px;
-  background-color: #EEB06F;
-  border: none;
-}
-
-
-/*Text- Animation**/
-
-.hidden{
-  opacity: 0;
-  filter: blur(50px);
-  transition: all .8s;
-  transform: translateY(100%);
-}
-.show{
-  opacity: 1;
-  filter: blur(0);
-  transform: translateY(0);
- 
-}
-
-
-
-
-
-
-.block {
   
-  display: flex;
-  width: 100%;
-  padding-top: 0;
-  justify-content: center;
-  position: relative;
-  position: sticky;
-  top: 0; 
-  right: 0;
+
+
+main{
+    background-image: url("https://images.unsplash.com/photo-1679663877752-c00ad7f1c5c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background-size:cover;
+    position: relative;
+    background-position: center 0%;
+    z-index: 2;
+}
+#nav-toggle{
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  color: rgb(5, 51, 51);
+  background-color: antiquewhite;
   z-index: 3;
-}
-
-
-.menu-space {
-  display: inline-block;
-  width: 10px;
-  height: auto;
-  align-self: stretch;
-}
-
-.button {
-  position: static;
-  padding-right: 19px;
-  padding-left: 19px;
-  border-radius: 20px;
-  background-color: #5e7ab6;
-  opacity: 1;
-  -webkit-transition: 250ms cubic-bezier(.333, .007, .25, 1);
-  transition: 250ms cubic-bezier(.333, .007, .25, 1);
-  font-family: BasicCommercialLTProLt,Arial,sans-serif;
-  color: #fff;
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: 300;
-  text-align: center;
-  text-transform: uppercase;
-  backdrop-filter: blur(4px);
-}
-
-
-.w-button {
-  display: inline-block;
-  padding: 9px 15px;
-  border: 0;
-  line-height: inherit;
-  text-decoration: none;
+  left: 92%;
+  top: 3%;
+  border: none;
   cursor: pointer;
-  border-radius: 1;
+  border-radius: 60%;
+  outline: none;
+  cursor: pointer;
+  transition: transform, background-color;
+  transition-timing-function: ease;
+  transition-duration: 0.4s;
 }
 
 
 
 
+#nav-toggle .gg-menu {
+  position: absolute;
+  left: 43%;
+  top: 50%;
+  transform: translate(-30%,-30%) ;
+  font-size: 1.8rem;
+  color: black;
+  opacity: 0;
+
+}
+#nav-toggle .gg-close {
+  position: absolute;
+  left: 43%;
+  top: 50%;
+  transform: translate(-30%,-30%) ;
+  font-size: 1.8rem;
+  color: black;
+  opacity: 0;
+
+}
+body:not([data-nav="false"]) #nav-toggle > .gg-close{
+  opacity: 1;
+}
+body:not([data-nav="true"]) #nav-toggle > .gg-menu{
+  opacity: 1;
+}
+
+body[data-nav="true"]  main {
+  transform: translateX(-30%) ;
+}
+
+main{
+  transition: transform 0.5s cubic-bezier(0.13, 0.53, 0.38, 1);
+}
 
 
-
- 
 
