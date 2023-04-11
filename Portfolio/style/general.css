@@ -1,63 +1,48 @@
 
+
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+
+body{
+  overflow-x: hidden;
+  background: #02031C;
+  height:  485vh;
+}
 /*Nav-bar */
 
-.block {
-  
-    display: flex;
-    width: 100%;
-    padding-top: 0;
-    justify-content: center;
-    position: relative;
-    position: sticky;
-    top: 0; 
-    right: 0;
-    z-index: 3;
+nav {
+  background-color: #93c0d7;
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  top: 0; 
+  right: 0;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   }
   
-  
-  .menu-space {
-    display: inline-block;
-    width: 10px;
-    height: auto;
-    align-self: stretch;
+
+  .blur{
+    filter: blur(20px);
   }
-  
-  .button {
-    position: static;
-    margin-top: 10px;
-    padding-right: 33px;
-    padding-left: 33px;
-    border-radius: 20px;
-    background-color: rgba(28, 227, 234, 0.5);
-    opacity: 1;
-    font-family: 'Bebas Neue', cursive;
-    color: #fff;
+  .navmenu a {
+    color: #19184D;
     font-size: 20px;
-    line-height: 38px;
-    font-weight: 300;
-    text-align: center;
-    text-transform: uppercase;
-    backdrop-filter: blur(4px);
-  }
+    padding: 0 22px;
+    text-transform: capitalize;
+    font-family: 'Asap', sans-serif;
+    font-weight: 1000;
 
-
-
+ }
   
   
-
-
-@keyframes background-pan {
-    from {
-        background-position: 0% center;
-    }
-    to {
-        background-position: -200% center;
-    }
-   }
-
-   @keyframes typeIn {
-    to { width: 28ch; }
-}
 
    /***Transition**/
    .hidden{
@@ -76,72 +61,17 @@
     display: inline-block;
   }
   
-  .typed {
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: 2px solid;
-    width: 0;
-    animation: typing 1.5s steps(14, end ) forwards, blinking 1s infinite;
-  }
-    
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
+
   
-  @keyframes blinking {
-    0% {border-right-color: transparent}
-    50% {border-right-color: rgb(240, 153, 81)}
-    100% {border-right-color: transparent}
-  }
+
 
 
 /**Responsive*/
 
 @media  (max-width:1100px){
 
-
-  #nav-toggle{
-    width: 50px;
-    height: 50px;
-    position: sticky;
-    color: rgb(5, 51, 51);
-    z-index: 3;
-    left: 100%;
-    border: none;
-    cursor: pointer;
-    border-radius: 60%;
-    outline: none;
-    cursor: pointer;
-    transition: transform, background-color;
-    transition-timing-function: ease;
-    transition-duration: 1s;
-  }
-
-
-  #nav-toggle:hover {
-    transform:  scale(1.04);
-  }
-  #nav-toggle:active {
-    transform:  scale(0.9);
-  }
-
-  #nav-toggle > i{
-    position: absolute;
-    left: 45%;
-    top: 45%;
-    transform: translate(-30%,-30%) ;
-    font-size: 1.8rem;
-  }
-
-
-    body{
-        height:  990vh;
-    
-    }
-
-    nav {
-        width: 100%;
-        background:none;
-    }
+nav{
+  opacity: 0;
+}
+  
 }
